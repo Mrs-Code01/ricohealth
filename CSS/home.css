@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Petro;
+  src: url(../PetrovSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Petro2;
+  src: url(../PetrovSans-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: .7px;
+}
+
+:root {
+  --paragraph: 1.7rem;
+  --header-2: 3.9rem;
+  --header-3: 2rem;
+  --container-width: 85%;
+  --main-padding: 50px 0;
+  --a-tag: 2rem;
+}
+
+body {
+  font-family: Petro, sans-serif;
+  background-color: #fcfcfc;
+}
+
+h2 {
+  font-family: Petro2, sans-serif;
+}
+
+main {
+  min-height: 600px;
+  background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../IMAGES/frog.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  background-color: hsl(0, 0%, 100%);
+  width: 55%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 10px;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 6rem;
+  font-family: Petro2, sans-serif;
+  line-height: 1;
+}
+
+.main-content-line {
+  height: 6px;
+  width: 110px;
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0);
+  margin: 15px 0;
+}
+
+.main-content p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.main-content a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: var(--a-tag);
+  padding: 13px 10px;
+  width: 250px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.main-content a:nth-of-type(1) {
+  background-color: rgb(41, 105, 50);
+  margin-right: 20px;
+}
+
+.main-content a:nth-of-type(2) {
+  background-color: rgb(0, 0, 0);
+}
+
+/********END OF THE MAIN********/
+/********END OF THE MAIN********/
+/********END OF THE MAIN********/
+.newsletter {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.newsletter-width {
+  width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-width h2 {
+  font-size: var(--header-2);
+}
+
+.newsletter-width p {
+  font-size: var(--paragraph);
+  width: 60%;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.newsletter-width form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter-width form input {
+  outline: 0;
+  border: 3px solid black;
+  padding: 15px 20px;
+  width: 38%;
+  border-radius: 4px;
+  font-size: 1.8rem;
+}
+
+.newsletter-width form button {
+  outline: 0;
+  padding: 15px 20px;
+  width: 20%;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}

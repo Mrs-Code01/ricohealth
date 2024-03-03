@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Petro;
+  src: url(../PetrovSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: .7px;
+}
+
+:root {
+  --paragraph: 1.7rem;
+  --header-2: 3.5rem;
+  --header-3: 2rem;
+  --container-width: 85%;
+  --main-padding: 50px 0;
+  --a-tag: 2rem;
+}
+
+body {
+  font-family: Petro, sans-serif;
+  background-color: #fcfcfc;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.038);
+}
+
+header h3 {
+  font-size: 3rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: var(--a-tag);
+  color: #000000;
+  transition: .3s ease-in;
+}
+
+nav ul a:hover {
+  opacity: .7;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
